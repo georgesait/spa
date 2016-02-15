@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>WebSait BoilerPlate</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- <label for="toggle" class="toggle">Toggle baseline</label>
+	<input type="checkbox" id="toggle" class="toggle__input"> -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1><a href="/">WebSait Boilerplate</a></h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div data-component="navigation">
+						Navigation is being beamed in ..
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div data-component="main">
+						Main content comin' through pall ..
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-small-6">
+					<p>This single page app is made with RequireJS, BackboneJS, jQuery, and SASS.</p>
+					<p>Typography is managed with <a href="http://olafmuller.nl/vertical-rhythm/">Vertical Rhytm by Olaf Muller</a> and the Google Fonts API</p>
+				</div>
+				<div class="col-small-6">
+					<p>&mdash; George Sait, Frontend WebDev</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- LiveReload -->
+	<script>
+		// jscs: disable
+        (function (w, d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+
+            g.src = w.location.protocol + '//' + w.location.hostname + ':35729/livereload.js';
+            s.parentNode.insertBefore(g, s);
+
+        }(this, document, 'script'));
+
+        window.addEventListener('beforeunload', function() {
+            if (window.LiveReload) {
+                window.LiveReload.shutDown();
+            }
+        }, false);
+    </script>
+
+	<!-- RequireJS -->
+	<!-- <script data-main="/js/source/main" src="/js/vendor/require/require.js"></script> -->
+
+	<!-- RequireJS Build File -->
+	<script data-main="/js/build/main" src="/js/vendor/require/require.js"></script>
+</body>
+
+</html>

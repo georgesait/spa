@@ -1,0 +1,12 @@
+<h1>Totaal aantal teams: <%= count %></h1>
+
+<div class="row">
+	<% _.each(teams, function(team, i) { %>
+		<div class="col-3">
+			<div class="team centered">
+				<p class="bold"><%- team.name %></p>
+				<img src="<%- team.crestUrl %>" alt="" />
+			</div>
+		</div>
+	<% }); %>
+</div>

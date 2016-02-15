@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.navigation {
+	background-color: $black-darkest;
+
+	&__list {
+		display: block;
+	}
+
+	&__list-item {
+		display: inline-block;
+	}
+
+	&__link {
+		display: inline-block;
+	}
+}

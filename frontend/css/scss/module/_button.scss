@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+	@include vertical-rhythm;
+
+	padding: $distance-xs $distance-s;
+	margin: -2px 0;
+
+	display: inline-block;
+
+	text-align: center;
+	font-weight: $font-weight-normal;
+	text-decoration: none;
+
+	vertical-align: middle;
+	cursor: pointer;
+
+	border: $border-s;
+	border-radius: $radius-m;
+	// font-weight: bold;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		outline: none;
+	}
+}
